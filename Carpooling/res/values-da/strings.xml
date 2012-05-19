@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
     <string name="app_name">Carpooling</string>
+    <string name="mainCreateRouteBtn">Opret rute</string>
+    <string name="mainFindRouteBtn">Søg efter rute</string>
+    <string name="mainMyRoutesBtn">Mine ruter</string>
 </resources>

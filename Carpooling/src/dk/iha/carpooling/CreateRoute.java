@@ -10,6 +10,7 @@ public class CreateRoute extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// TODO Put your code here
+		
+		setContentView(R.layout.create_route_view);
 	}
 }

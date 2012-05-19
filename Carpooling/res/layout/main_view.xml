@@ -10,13 +10,49 @@
         android:src="@drawable/road_perspective"
         android:contentDescription="BackgroundImage" >        
     </ImageView>
-    
+    
     <LinearLayout
-        android:orientation="vertical">
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
         
-        <Button
-             />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3" >
+            
+            <Button
+                android:id="@+id/createRouteBtn"
+	         	android:text="@string/mainCreateRouteBtn"
+	         	android:layout_width="0dp"
+	         	android:layout_height="wrap_content"
+	         	android:layout_weight="1"
+	         	android:layout_gravity="center_vertical"
+	         	android:onClick="navigateTo" />
         
+	        <Button
+	            android:id="@+id/saerchRouteBtn"
+	         	android:text="@string/mainFindRouteBtn"
+	         	android:layout_width="0dp"
+	         	android:layout_height="wrap_content"
+	         	android:layout_weight="1"
+	         	android:layout_gravity="center_vertical"
+	         	android:onClick="navigateTo" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10" >
+            
+            <Button
+	         	android:text="@string/mainMyRoutesBtn"
+	         	android:layout_width="fill_parent"
+	         	android:layout_height="wrap_content"
+	         	android:layout_gravity="bottom"
+	         	android:layout_marginBottom="30dp"
+	         	android:onClick="navigateTo" />
+        </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>
