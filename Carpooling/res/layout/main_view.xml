@@ -31,7 +31,7 @@
 	         	android:onClick="navigateTo" />
         
 	        <Button
-	            android:id="@+id/saerchRouteBtn"
+	            android:id="@+id/searchRouteBtn"
 	         	android:text="@string/mainFindRouteBtn"
 	         	android:layout_width="0dp"
 	         	android:layout_height="wrap_content"
@@ -46,6 +46,7 @@
             android:layout_weight="10" >
             
             <Button
+                android:id="@+id/myRoutesBtn"
 	         	android:text="@string/mainMyRoutesBtn"
 	         	android:layout_width="fill_parent"
 	         	android:layout_height="wrap_content"

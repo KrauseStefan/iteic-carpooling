@@ -20,13 +20,28 @@ public class Main extends Activity {
 	
 	public void navigateTo(View view)
 	{
+		Intent intent = new Intent();
+		
 		switch (view.getId())
 		{
 		case R.id.createRouteBtn:
-			Intent intent = new Intent();
 	        intent.setClass(this, CreateRoute.class);
 	        
-	        startActivityForResult(intent, 1);
+	        startActivityForResult(intent, view.getId());
+			
+			break;
+			
+		case R.id.searchRouteBtn:
+	        intent.setClass(this, SearchForRoute.class);
+	        
+	        startActivityForResult(intent, view.getId());
+			
+			break;
+			
+		case R.id.myRoutesBtn:
+	        intent.setClass(this, MyRoutes.class);
+	        
+	        startActivityForResult(intent, view.getId());
 			
 			break;
 

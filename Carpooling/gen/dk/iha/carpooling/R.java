@@ -16,7 +16,8 @@ public final class R {
     }
     public static final class id {
         public static final int createRouteBtn=0x7f050000;
-        public static final int saerchRouteBtn=0x7f050001;
+        public static final int myRoutesBtn=0x7f050002;
+        public static final int searchRouteBtn=0x7f050001;
     }
     public static final class layout {
         public static final int create_route_view=0x7f030000;
