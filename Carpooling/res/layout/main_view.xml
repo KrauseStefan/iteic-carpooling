@@ -10,68 +10,78 @@
         android:src="@drawable/road_perspective"
         android:contentDescription="BackgroundImage" >        
     </ImageView>
-    
+    
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical" >
-        <LinearLayout 
+
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
-            
-            <AutoCompleteTextView 
+
+            <AutoCompleteTextView
                 android:id="@+id/autocomplete_from"
-				android:layout_width="fill_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginLeft="5dp"
-				android:hint="Fra:"/>
-            
-            <AutoCompleteTextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Fra:" />
+
+            <AutoCompleteTextView
                 android:id="@+id/autocomplete_to"
-				android:layout_width="fill_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginLeft="5dp"
-				android:hint="Til:"/>
-            
-	        <LinearLayout
-	            android:layout_width="fill_parent"
-	            android:layout_height="0dp"
-	            android:layout_weight="3" >
-	              
-	            <Button
-	                android:id="@+id/createRouteBtn"
-		         	android:text="@string/mainCreateRouteBtn"
-		         	android:layout_width="0dp"
-		         	android:layout_height="wrap_content"
-		         	android:layout_weight="1"
-		         	android:layout_gravity="center_vertical"
-		         	android:onClick="navigateTo" />
-	        
-		        <Button
-		            android:id="@+id/searchRouteBtn"
-		         	android:text="@string/mainFindRouteBtn"
-		         	android:layout_width="0dp"
-		         	android:layout_height="wrap_content"
-		         	android:layout_weight="1"
-		         	android:layout_gravity="center_vertical"
-		         	android:onClick="navigateTo" />
-	        </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="10" >
-            
-            <Button
-                android:id="@+id/myRoutesBtn"
-	         	android:text="@string/mainMyRoutesBtn"
-	         	android:layout_width="fill_parent"
-	         	android:layout_height="wrap_content"
-	         	android:layout_gravity="bottom"
-	         	android:layout_marginBottom="30dp"
-	         	android:onClick="navigateTo" />
-        </LinearLayout>
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Til:" />
+
+            <EditText
+                android:id="@+id/insert_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" >
+
+                <Button
+                    android:id="@+id/createRouteBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:onClick="navigateTo"
+                    android:text="@string/mainCreateRouteBtn" />
+
+                <Button
+                    android:id="@+id/searchRouteBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:onClick="navigateTo"
+                    android:text="@string/mainFindRouteBtn" />
+            </LinearLayout>
     </LinearLayout>
+    
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/myRoutesBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="navigateTo"
+        android:text="@string/mainMyRoutesBtn" />
 
 </RelativeLayout>
