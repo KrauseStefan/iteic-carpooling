@@ -10,6 +10,8 @@ public class UserProfile extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// TODO Put your code here
+		
+		setContentView(R.layout.user_profile_view);
+
 	}
 }

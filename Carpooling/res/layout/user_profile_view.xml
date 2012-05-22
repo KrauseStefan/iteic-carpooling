@@ -1,39 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
-	<LinearLayout 
-	   	android:layout_height="wrap_content"
-	   	android:layout_width="fill_parent"
-	   	android:orientation="horizontal" >
-	   	
-	    <ImageView
-	        android:layout_width="0dp"
-	        android:layout_height="130dp"
-	        android:layout_weight="9"
-	        android:src="@drawable/sackboy"
-	        android:layout_margin="15dp"
-	        android:background="#ffffff"
-	        android:padding="5dp" />
-	    
-	    <TextView
-	        android:layout_height="wrap_content"
-	        android:layout_width="0dp"
-	        android:layout_weight="10"
-	        android:layout_margin="15dp"
-	        android:text="@string/userProfileText" />
-	    
-	</LinearLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
 
-	<RatingBar
-	    android:id="@+id/ratingBar1"
+	<LinearLayout 
 	    android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"
-	    android:numStars="5"
-	    android:rating="4"
-	    android:isIndicator="true" />
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+	    
+		<LinearLayout 
+		   	android:layout_height="wrap_content"
+		   	android:layout_width="fill_parent"
+		   	android:orientation="horizontal" >
+		   	
+		    <ImageView
+		        android:layout_width="0dp"
+		        android:layout_height="130dp"
+		        android:layout_weight="9"
+		        android:src="@drawable/sackboy"
+		        android:layout_margin="15dp"
+		        android:background="#ffffff"
+		        android:padding="5dp" />
+		    
+		    <TextView
+		        android:layout_height="wrap_content"
+		        android:layout_width="0dp"
+		        android:layout_weight="10"
+		        android:layout_margin="15dp"
+		        android:text="@string/userProfileText" />
+		    
+		</LinearLayout>
 	
-	
-</LinearLayout>
+		<RatingBar
+		    android:id="@+id/ratingBar1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:numStars="5"
+		    android:rating="4"
+		    android:isIndicator="true" />
+		
+		<LinearLayout 
+		   	android:layout_height="wrap_content"
+		   	android:layout_width="fill_parent"
+		   	android:orientation="horizontal" >
+		   	
+		    <ImageView
+		        android:layout_width="0dp"
+		        android:layout_height="130dp"
+		        android:layout_weight="1"
+		        android:src="@drawable/my_home"
+		        android:layout_margin="15dp"
+		        android:background="#ffffff"
+		        android:padding="5dp" />
+		    
+		    <ImageView
+		        android:layout_width="0dp"
+		        android:layout_height="130dp"
+		        android:layout_weight="1"
+		        android:src="@drawable/my_car"
+		        android:layout_margin="15dp"
+		        android:background="#ffffff"
+		        android:padding="5dp" />	    
+		</LinearLayout>
+		    
+		<TextView 
+		   	android:layout_width="fill_parent"
+		   	android:layout_height="wrap_content"
+		   	android:text="Jeg bor på grønland og arbejder i weekenden i Danmark. Hver gang sejler jeg til Århus, hvorfra jeg kører resten af turen til København. Og herefter skal jeg hjemad igen. Det tager ikke så lang tid når man først har vennet sig til det. Min bil er fra '10... 1910 ;) Som du kan se er den i god stand og når det går godt kan den lige nå 37km/t. den er ikke blevet synet de seneste årtier men det lader ikke til at skat gidder sende flere rykkere. Håber vi ses på min næste tur." />
+		
+	</LinearLayout>
+</ScrollView>
