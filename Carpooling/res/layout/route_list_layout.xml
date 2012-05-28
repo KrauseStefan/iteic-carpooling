@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@android:color/background_light"
+    android:weightSum="100" >
+
+    <TableLayout
+        android:layout_width="0dip"
+        android:layout_height="150px" 
+        android:layout_weight="99">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/from"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/destination"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/routeView_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Århus"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colors" />
+
+            <TextView
+                android:id="@+id/routeView_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="København"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colors" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/driver"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/time"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/date"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/routeView_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Gitte Hening"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colors" />
+
+            <TextView
+                android:id="@+id/routeView_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="12:30"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colors" />
+
+            <TextView
+                android:id="@+id/routeView_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="5/12"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colors" />
+        </TableRow>
+    </TableLayout>	<TextView
+	    android:layout_width="60dp"
+	    android:layout_height="wrap_content" 
+	    android:text="80kr."
+	    android:textColor="#100680"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:gravity="right"
+	    android:layout_gravity="center_vertical"
+	    />
+
+</LinearLayout>
