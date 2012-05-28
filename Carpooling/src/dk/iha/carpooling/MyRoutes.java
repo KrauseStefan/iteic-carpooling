@@ -29,8 +29,8 @@ public class MyRoutes extends Activity {
 		HashMap<String, String> val2 = new HashMap<String, String>();
 		HashMap<String, String> val3 = new HashMap<String, String>();
 
-		val1.put(keys[0], "Aarhus -> København");
-		val2.put(keys[0], "København -> Herning");
+		val1.put(keys[0], "Aarhus -> KÃ¸benhavn");
+		val2.put(keys[0], "KÃ¸benhavn -> Herning");
 		val3.put(keys[0], "Herning -> Aarhus");
 
 		routes.clear();
