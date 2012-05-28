@@ -35,6 +35,8 @@ public class MyRoutes extends Activity {
 		val2.put(keys[0], "København -> Herning");
 		val3.put(keys[0], "Herning -> Aarhus");
 
+		routes.clear();
+		
 		routes.add(val1);
 		routes.add(val2);
 		routes.add(val3);
