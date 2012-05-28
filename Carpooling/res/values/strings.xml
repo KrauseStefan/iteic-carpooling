@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
-    <string name="app_name">Carpooling</string>
+    <string name="app_name">Quibus</string>
     <string name="mainCreateRouteBtn">Create route</string>
     <string name="mainFindRouteBtn">Search for a route</string>
     <string name="mainMyRoutesBtn">My routes</string>
