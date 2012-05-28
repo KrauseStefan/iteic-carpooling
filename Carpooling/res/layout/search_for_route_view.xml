@@ -10,21 +10,25 @@
         android:layout_height="wrap_content" >
     </ListView>
     <!-- Slides up from the buttum to view filtering options -->
-    
+
+
     <!-- <SlidingDrawer -->
     <!-- android:layout_width="fill_parent" -->
     <!-- android:layout_height="400dp" > -->
 
-    <!-- <AutoCompleteTextView -->
-    <!-- android:layout_width="fill_parent" -->
-    <!-- android:layout_height="wrap_content" -->
-    <!-- android:hint="ddfsdkl" /> -->
 
     <!-- <AutoCompleteTextView -->
     <!-- android:layout_width="fill_parent" -->
     <!-- android:layout_height="wrap_content" -->
     <!-- android:hint="ddfsdkl" /> -->
-    
+
+
+    <!-- <AutoCompleteTextView -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:hint="ddfsdkl" /> -->
+
+
     <!-- </SlidingDrawer> -->
 
 </LinearLayout>

@@ -1,28 +1,22 @@
 package dk.iha.carpooling;
 
-import java.text.AttributedCharacterIterator.Attribute;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 
 import dk.iha.carpooling.data.Route;
 
 import android.app.Activity;
-import android.database.DataSetObserver;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.AttributeSet;
-import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Adapter;
-import android.widget.LinearLayout;
-import android.widget.ListAdapter;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.TextView;
+import android.widget.Toast;
 
-public class SearchForRoute extends Activity {
+public class SearchForRoute extends Activity implements OnItemClickListener {
 
 	ListView list = null;
 
@@ -58,11 +52,23 @@ public class SearchForRoute extends Activity {
 
 			routeList.add(map);
 		}
-		
+
 		list = (ListView) findViewById(R.id.src_results_ListView);
+		list.setOnItemClickListener(this);
 		list.setAdapter(new SimpleAdapter(this, routeList,
 				R.layout.route_list_layout, from, toIds));
 
+	}
+
+	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+		Toast t = Toast.makeText(this, "It Works!", Toast.LENGTH_LONG);
+		t.show();
+		
+		Intent i = new Intent(this, SearchResultRouteInfo.class);
+		
+		
+		
+		startActivity(i);
 	}
 
 	private void makeDummyData() {
@@ -85,105 +91,5 @@ public class SearchForRoute extends Activity {
 		routes.add(new Route("Århus", "Esbjerg", "Lily", "23:30", "13/6",
 				"50kr."));
 	}
-	//
-	// public int getCount() {
-	// return routes.size();
-	// }
-	//
-	// public Object getItem(int index) {
-	// return routes.get(index);
-	// }
-	//
-	// public long getItemId(int index) {
-	// return index;
-	// }
-	//
-	// public int getItemViewType(int arg0) {
-	//
-	// return IGNORE_ITEM_VIEW_TYPE;
-	// }
-	//
-	// public View getView(int index, View convertView, ViewGroup parent) {
-	// LinearLayout baseLayout = (LinearLayout) convertView;
-	//
-	//
-	// if (baseLayout == null) {
-	// baseLayout = new LinearLayout(this.getBaseContext());
-	// LinearLayout rightLayout = new LinearLayout(this.getBaseContext());
-	// rightLayout.setGravity(Gravity.RIGHT);
-	//
-	// TextView fromLabel = new TextView(this.getBaseContext());
-	// TextView destinationLabel = new TextView(this.getBaseContext());
-	// TextView driverLabel = new TextView(this.getBaseContext());
-	// TextView timeLabel = new TextView(this.getBaseContext());
-	// TextView dateLabel = new TextView(this.getBaseContext());
-	//
-	// TextView from = new TextView(this.getBaseContext());
-	// TextView destination = new TextView(this.getBaseContext());
-	// TextView driver = new TextView(this.getBaseContext());
-	// TextView time = new TextView(this.getBaseContext());
-	// TextView date = new TextView(this.getBaseContext());
-	//
-	// from.setWidth(115);
-	// destination.setWidth(120);
-	// driver.setWidth(100);
-	//
-	// from.setPadding(5, 5, 5, 5);
-	// destination.setPadding(5, 5, 5, 5);
-	// driver.setPadding(5, 5, 5, 5);
-	// time.setPadding(5, 5, 5, 5);
-	// date.setPadding(5, 5, 5, 5);
-	//
-	// fromLabel.setText("From");
-	// destinationLabel.setText("Destination");
-	// driverLabel.setText("Driver");
-	// timeLabel.setText("Time");
-	// dateLabel.setText("Date");
-	//
-	// from.setText(routes.get(index).from);
-	// destination.setText(routes.get(index).destination);
-	// driver.setText(routes.get(index).driver);
-	// time.setText(routes.get(index).time);
-	// date.setText(routes.get(index).date);
-	//
-	// baseLayout.addView(from);
-	// baseLayout.addView(destination);
-	// baseLayout.addView(driver);
-	//
-	// rightLayout.addView(time);
-	// rightLayout.addView(date);
-	//
-	// baseLayout.addView(rightLayout);
-	//
-	// }
-	//
-	// return baseLayout;
-	// }
-	//
-	// public int getViewTypeCount() {
-	// return 1;
-	// }
-	//
-	// public boolean hasStableIds() {
-	// return true;
-	// }
-	//
-	// public boolean isEmpty() {
-	// return routes.isEmpty();
-	// }
-	//
-	// public void registerDataSetObserver(DataSetObserver arg0) {
-	// }
-	//
-	// public void unregisterDataSetObserver(DataSetObserver arg0) {
-	// }
-	//
-	// public boolean areAllItemsEnabled() {
-	// return true;
-	// }
-	//
-	// public boolean isEnabled(int position) {
-	// return true;
-	// }
 
 }

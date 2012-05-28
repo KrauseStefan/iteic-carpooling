@@ -8,7 +8,7 @@
 
     <TableLayout
         android:layout_width="0dip"
-        android:layout_height="150px" 
+        android:layout_height="wrap_content" 
         android:layout_weight="99">
 
         <TableRow
