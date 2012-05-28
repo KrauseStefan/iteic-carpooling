@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.maps.MapView 
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mapview"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:clickable="true"
-    android:apiKey="06q9O0XWxPChtzvkoUPwpUSt3oe0clvvonHSWfA" > 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fra: Aarhus" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Til: København" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estimeret ankomsttid: 10:45" />
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/aarhus"
+        android:padding="3dp"
+        android:layout_margin="6dp"
+        android:scaleType="fitXY"
+        android:background="#ffffff" />"
 
-</com.google.android.maps.MapView>
+</LinearLayout>
