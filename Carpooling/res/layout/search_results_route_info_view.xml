@@ -97,7 +97,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/date" />
+                android:text="@string/price" />
 
             <TextView
                 android:id="@+id/seach_results_route_info_price"
@@ -114,7 +114,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Commentes"
+            android:text="Kommentarer"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
@@ -123,7 +123,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:focusable="false"
-            android:hint="No Comments yet"
+            android:hint="Ingen kommentarer endnu"
             android:inputType="textMultiLine" >
 
             <requestFocus />
@@ -133,7 +133,7 @@
             android:id="@+id/seach_results_route_info_Comments_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Write a comment..."
+            android:hint="Skriv en kommentar..."
             android:ems="10"
             android:inputType="textMultiLine" />
     </LinearLayout>
