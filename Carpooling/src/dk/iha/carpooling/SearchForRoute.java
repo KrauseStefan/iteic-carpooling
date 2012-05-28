@@ -68,23 +68,23 @@ public class SearchForRoute extends Activity implements OnItemClickListener {
 	}
 
 	private void makeDummyData() {
-		routes.add(new Route("Århus", "København", "Tommy", "20:30", "12/6",
+		routes.add(new Route("Ã…rhus", "KÃ¸benhavn", "Tommy", "20:30", "12/6",
 				"50kr."));
 		routes.add(new Route("Skive", "Kastrup", "Louise", "10:30", "12/6",
 				"50kr."));
-		routes.add(new Route("Horsens", "Ålborg", "Mads", "12:50", "12/6",
+		routes.add(new Route("Horsens", "Ã…lborg", "Mads", "12:50", "12/6",
 				"50kr."));
 		routes.add(new Route("Thisted", "Esbjerg", "Andrea", "14:00", "12/6",
 				"50kr."));
-		routes.add(new Route("Århus", "Skagen", "Henrik", "10:55", "13/6",
+		routes.add(new Route("Ã…rhus", "Skagen", "Henrik", "10:55", "13/6",
 				"50kr."));
 		routes.add(new Route("Viby J", "Fredericia", "Tom", "10:30", "13/6",
 				"50kr."));
 		routes.add(new Route("Alborg", "Odense", "Mia", "19:00", "13/6",
 				"50kr."));
-		routes.add(new Route("Århus", "København", "Mads", "20:00", "13/6",
+		routes.add(new Route("Ã…rhus", "KÃ¸benhavn", "Mads", "20:00", "13/6",
 				"50kr."));
-		routes.add(new Route("Århus", "Esbjerg", "Lily", "23:30", "13/6",
+		routes.add(new Route("Ã…rhus", "Esbjerg", "Lily", "23:30", "13/6",
 				"50kr."));
 	}
 
