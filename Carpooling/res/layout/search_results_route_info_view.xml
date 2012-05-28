@@ -4,7 +4,7 @@
     android:layout_height="wrap_content" >
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:focusable="true"
         android:focusableInTouchMode="true"
@@ -109,6 +109,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:scaleType="fitXY"
             android:src="@drawable/aarhus" />
 
         <TextView
@@ -116,10 +117,10 @@
             android:layout_height="wrap_content"
             android:text="Kommentarer"
             android:textAppearance="?android:attr/textAppearanceLarge" />
-
+
         <EditText
             android:id="@+id/seach_results_route_info_Comments"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:focusable="false"
@@ -131,10 +132,10 @@
 
         <EditText
             android:id="@+id/seach_results_route_info_Comments_input"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Skriv en kommentar..."
             android:ems="10"
+            android:hint="Skriv en kommentar..."
             android:inputType="textMultiLine" />
     </LinearLayout>
 
