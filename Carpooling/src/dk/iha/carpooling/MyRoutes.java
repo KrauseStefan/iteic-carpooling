@@ -5,13 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 
 import android.app.Activity;
-import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -31,8 +29,8 @@ public class MyRoutes extends Activity {
 		HashMap<String, String> val2 = new HashMap<String, String>();
 		HashMap<String, String> val3 = new HashMap<String, String>();
 
-		val1.put(keys[0], "Aarhus -> KÃ¸benhavn");
-		val2.put(keys[0], "KÃ¸benhavn -> Herning");
+		val1.put(keys[0], "Aarhus -> København");
+		val2.put(keys[0], "København -> Herning");
 		val3.put(keys[0], "Herning -> Aarhus");
 
 		routes.clear();

@@ -10,6 +10,8 @@ public class SearchResultRouteInfo extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// TODO Put your code here
+		
+		setContentView(R.layout.search_results_route_info_view);
+		
 	}
 }
