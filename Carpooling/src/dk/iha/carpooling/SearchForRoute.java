@@ -60,10 +60,10 @@ public class SearchForRoute extends Activity implements OnItemClickListener {
 
 	}
 
-	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-
+	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 		Intent i = new Intent(this, SearchResultRouteInfo.class);
 
+		i.putExtra("data", routes.get(position));
 		startActivity(i);
 	}
 

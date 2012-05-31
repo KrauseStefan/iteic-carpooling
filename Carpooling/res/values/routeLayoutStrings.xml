@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="from">From</string>
+    <string name="from">Fra</string>
     <string name="destination">Destination</string>
-    <string name="driver">Driver</string>
-    <string name="time">Time</string>
-    <string name="date">Date</string>
-    <string name="price">Price</string>
+    <string name="driver">Chauffør</string>
+    <string name="time">Tid</string>
+    <string name="date">Dato</string>
+    <string name="price">Pris</string>
     
 </resources>
